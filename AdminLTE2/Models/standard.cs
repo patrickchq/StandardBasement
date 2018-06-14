@@ -13,7 +13,14 @@ namespace AdminLTE2.Models
         public string standardTitle { get; set; }
         
      }
-    public class ULStandard
+    public class ULStandard:standard
+    {
+       public DateTime standardIssuedate { get; set; }
+       public int standardEdition { get; set; }
+       public DateTime revisionDate { get; set; }
+       
+    }
+    public class IECStandard:standard
     {
 
     }
